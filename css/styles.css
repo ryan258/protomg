@@ -570,3 +570,14 @@ footer h3 {
 	background-color:#c6ac00; 
 } 
 */
+
+/**Helpers**/ 
+
+.fixit-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    background-color: #fff;
+    width: 300px;
+    z-index: 999;
+}
