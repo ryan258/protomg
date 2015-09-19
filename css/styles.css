@@ -1,10 +1,10 @@
 html {
-	font-family: "Benton Sans",sans-serif;
+
 }
 
 body {
 	background-color: #f5f5f5;
-	font-family: "Benton Sans",sans-serif;
+
 }
 
 h1 {
@@ -15,32 +15,64 @@ h1 {
 	max-width: 1200px;
 	text-align: center;
 	display: block;
-  margin: 20px auto;
+	margin: 32px auto;
 }
 
-h2 { 
+h2 {
 	font-size: 36px;
 	line-height: 48px;
 	color: #333;
 	max-width: 960px;
+	display: block;
+	margin: 60px auto 20px;
 } 
 
 h3 { 
-	font-size: 30px;
-	line-height: 42px;
-	color: #000;
-	font-weight: bold;
+	font-size: 28px;
+	line-height: 36px;
+	color: #666;
 	max-width: 760px;
+}
+
+.row .col-md-4:nth-child(3n+1) {
+	clear: left;
 }
 
 .iframe-container {
 	text-align: center;
 }
 
+.share-post-icons {
+  position: absolute;
+  margin: 20px;
+}
+
+.share-post-icons li {
+	margin: 10px 0;
+}
+
+#post-content .stage img {
+	margin-bottom: 0;
+}
+
 #post-content img {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 60px auto;
   display: block;
+}
+
+#post-content .thumbs {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.thumbs ul {
+	max-width: 960px;
+}
+
+
+#post-content .thumbs img {
+	margin: 0 auto;
 }
 
 #post-content h2,
@@ -53,8 +85,7 @@ h3 {
 .post-deck {
 	font-size: 30px; 
 	line-height: 36px; 
-	color: #000; 
-	font-weight: bold; 
+	color: #666; 
 	max-width: 1200px;
 	text-align: center;
 }
@@ -64,18 +95,75 @@ h3 {
 	line-height: 36px; 
 	color: #666; 
 	max-width: 760px;
-	margin: 14px auto; 
+	margin: 30px auto; 
 } 
 
-p, ul { 
-	font-size: 18px; 
-	line-height: 30px; 
-	color: #666; 
+p, ul, figcaption {
+	font-size: 18px;
+	line-height: 30px;
+	color: #666;
 	max-width: 760px;
-	margin: 0 auto 10px;
+	margin: 20px auto 30px;
 }
 
-p.lead,
+.body > p,
+.body > ul,
+.body > figcaption {
+	max-width: 780px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+p {
+	line-height: 32px;
+	margin: 0 auto 30px;
+}
+
+figcaption {
+	font-size: 16px;
+	padding: .3em 0;
+	margin: 0 auto;
+}
+
+figure.full-width {
+	max-width: 100%;
+	width: 100%;
+}
+
+#post-content .fullw img {
+	width: 100%;
+	max-width: 100%;
+}
+
+blockquote {
+	padding: 30px 0;
+	max-width:960px;
+	margin: 60px auto;
+	font-weight: bold;
+    font-size: 26px;
+    line-height: 42px;
+    border-left: 0;
+    color: #064083;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+}
+
+p blockquote {
+	width: 50%;
+  float: right;
+  margin: 0;
+}
+
+.lead {
+	margin: 30px auto 30px;
+	font-size: 42px;
+	line-height: 56px;
+}
+
+p.lead {
+	max-width: 760px;
+}
+
 p.wide {
 	max-width: 960px;
 }
@@ -84,10 +172,61 @@ img {
 	max-width: 100%;
 }
 
-#post-content img.fullw {
+#post-img img.fullw {
 	width: 100%;
-	max-width: 100%;
+	/*max-width: 100%;*/
 }
+
+/*******************front*/
+
+#main-slider {
+	position: relative;
+	margin-bottom: 2em;
+}
+
+#main-slider img.fullw {
+	width: 100%;
+	margin: 0;
+}
+
+.slide-text {
+	text-align: center;
+	width: 100%;
+	background-color: #222;
+	/* color: #fff; */
+	padding: 1.5em 1em 0.1em;
+}
+
+h2.slide-title {
+	margin: 0 auto;
+}
+
+.slide-title, .slide-deck {
+	color: #fff;
+}
+
+.front .col-md-4 .blog-teaser-img {
+	margin-bottom: 5px;
+}
+
+.front .col-md-4 {
+	margin-bottom: 2em;
+}
+.front .col-md-4 .teaser-title {
+	font-weight: bold;
+	font-size: 1.15em;
+	line-height: 1.5em;
+}
+.front .col-md-4 .teaser-deck {}
+.front .col-md-4 .teaser-tags {
+	font-size: .9em
+}
+
+
+
+
+
+/*posts*/
 
 #post-content .twoimages img {
 	max-width: 100%;
@@ -96,36 +235,134 @@ img {
 .img-caption { 
 	font-size: 18px; 
 	line-height: 30px; 
-	color: #666; 
+	color: #999;
+	margin: 20px auto 30px;
 }
 
 button.more-stories,
 button.center {
 	margin: 30px auto;
 	display: block;
+	background: #064083;
+  box-sizing: content-box;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 18px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+a.c2a {
+  background: #064083;
+  box-sizing: content-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 12px 18px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+a.c2a:hover {
+	background: #0073D0;
+  color: #fff;
+  text-decoration: none;
 }
 
 #about-author {
 	background: #dcddde;
+	overflow: hidden;
+}
+
+.author-container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 1em 0 3em;
+}
+
+.author-container p {
+	margin: 0 0 1em;
 }
 
 #about-author .author-img {
 	float: right;
-	margin-top: 55px;
+	margin: 55px 5px 55px 25px;
 }
 
 #post-topics {
 	background-color: #007dc3;
+overflow:hidden;
+padding: 0 0 3em;;
+}
+
+#post-topics .row .col-md-4:nth-child(3n+0) {
+	clear: left;
+}
+
+#post-topics h3 {
+	color: #fff;
+	margin: 0 auto .5em;
+	padding: 1em 0 .5em
+}
+
+#post-topics > * {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#post-topics li {
+	padding: 0 1.5em 0 0;
+}
+
+#post-topics a {
+	background-color: #24408e;
+	color: #fff;
+	padding: 25px 50px;;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 #related-stories {
-	font-size: 24px; 
-	line-height: 30px; 
-	color: #000; 
-	font-weight: bold; 
-	background-color: #0c4da2;
-	border-top:1px solid #666; 
+	font-size: 24px;
+	line-height: 30px;
+	color: #000;
+	font-weight: bold;
+	background-color: #024da1;
+	border-top:1px solid #666;
 	border-bottom:1px solid #666;
+	padding: 1.5em 0;
+}
+
+#related-stories h3 {
+	color: #fff;
+}
+
+#related-stories .col-md-4 {
+	padding: .5em 
+}
+
+#related-stories .teaser-title,
+#related-stories .teaser-deck {
+	color: #fff;
+}
+
+#related-stories .teaser-title {
+	padding: .25em 0
+}
+
+#related-stories .teaser-deck {
+	font-size: .75em;
+}
+
+#related-stories .teaser-tags,
+#related-stories .teaser-tags a {
+	font-size: .75em;
+	color: #fff;
 }
 
 /* Footer Styles */
@@ -134,7 +371,18 @@ footer {
 	font-size: 18px; 
 	line-height: 14px; 
 	color: #FFF;
-	background-color: #646f7c; 
+	background-color: #002B5C;
+	padding: 1.5em 0 6em; 
+}
+
+footer p,
+footer a,
+footer a:hover {
+	color: #fff;
+}
+
+footer a:hover {
+	text-decoration: underline;
 }
 
 footer h3 { 
@@ -159,56 +407,56 @@ footer h3 {
 /* Custom Pull Quotes for the editor */
 
 .blogquoteblue {                 
-	font-size: 34px; 
-	line-height: 56px; 
-	color: #FFF; 
+	font-size: 26px; 
+	line-height: 42px; 
+	color: #064083; 
 	font-weight: bold; 
 	max-width: 960px; 
 } 
 
 .blogquotedarkblue {                 
-	font-size: 34px; 
-	line-height: 56px; 
+	font-size: 26px; 
+	line-height: 42px; 
 	color: #FFF; 
 	font-weight: bold; 
 	max-width: 960px; 
 } 
 
 .blogquotegreen {                 
-	font-size: 34px; 
-	line-height: 56px; 
+	font-size: 26px; 
+	line-height: 42px; 
 	color: #FFF; 
 	font-weight: bold; 
 	max-width: 960px; 
 } 
 
 .blogquotegray {                 
-	font-size: 34px; 
-	line-height: 56px; 
+	font-size: 26px; 
+	line-height: 42px; 
 	color: #FFF; 
 	font-weight: bold; 
 	max-width: 960px; 
 } 
 
 .blogquotebrown {                 
-	font-size: 34px; 
-	line-height: 56px; 
+	font-size: 26px; 
+	line-height: 42px; 
 	color: #FFF; 
 	font-weight: bold; 
 	max-width: 960px; 
 } 
 
 .blogquoteorange {                 
-	font-size: 34px; 
-	line-height: 56px; 
+	font-size: 26px; 
+	line-height: 42px; 
 	color: #FFF; 
 	font-weight: bold; 
 	max-width: 960px; 
 } 
 
 .blogquotelyellow {                 
-	font-size: 34px; 
-	line-height: 56px; 
+	font-size: 26px; 
+	line-height: 42px; 
 	color: #FFF; 
 	font-weight: bold; 
 	max-width: 960px; 
@@ -216,16 +464,41 @@ footer h3 {
 
 /* Custom Full width BG's for the editor */
 /*tested*/
-.bg-full-green {                 
-	/*max-width: 760px;*/
-	background-color:#78a22f; 
-} 
-.bg-full-green p {
+.bg p {
 	color: #fff;
-	font-size: 34px; 
-	font-weight: bold; 
-	line-height: 56px; 
+	font-size: 26px;  
+	line-height: 42px;
+	padding: 60px 0; 
 }
+
+.bg-green {                 
+	background-color:#78a22f; 
+}
+
+.bg-blue {                 
+	background-color: #007dc3; 
+}
+.bg-darkblue {                 
+	background-color: #064083; 
+}
+.bg-gray {                 
+	background-color: #717073;
+}
+.bg-brown {                 
+	background-color: #b95915; 
+}
+.bg-orange {                 
+	background-color: #f37321; 
+}
+.bg-yellow {                 
+	background-color: #c6ac00; 
+}
+/*.bg-full-green p {
+	color: #fff;
+	font-size: 26px;  
+	line-height: 42px;
+	padding: 60px 0; 
+}*/
 .blogquotegreen {                 
 	font-size: 34px; 
 	line-height: 56px; 
@@ -233,7 +506,7 @@ footer h3 {
 	font-weight: bold; 
 	max-width: 960px; 
 } 
-/********/
+/*******
 .blogpanelblue {                 
 	font-size: 34px; 
 	line-height: 56px; 
@@ -296,4 +569,4 @@ footer h3 {
 	max-width: 760px; 
 	background-color:#c6ac00; 
 } 
-
+*/
