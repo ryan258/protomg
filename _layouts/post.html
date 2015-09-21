@@ -8,8 +8,14 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <article class="post-content">
+  <article class="main post-content">
     {{ content }}
   </article>
+
+  {% include clients.html %}
+	{% include services.html %}
+	{% include events.html %}
+	{% include rel-books.html %}
+	{% include about.html %}
 
 </div>

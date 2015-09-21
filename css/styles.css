@@ -22,7 +22,6 @@ h2 {
 	font-size: 36px;
 	line-height: 48px;
 	color: #333;
-	max-width: 960px;
 	display: block;
 	margin: 60px auto 20px;
 } 
@@ -31,7 +30,7 @@ h3 {
 	font-size: 28px;
 	line-height: 36px;
 	color: #666;
-	max-width: 760px;
+	margin: 20px auto
 }
 
 .row .col-md-4:nth-child(3n+1) {
@@ -116,7 +115,7 @@ p, ul, figcaption {
 
 p {
 	line-height: 32px;
-	margin: 0 auto 30px;
+	margin: 15px auto;
 }
 
 figcaption {
@@ -222,9 +221,64 @@ h2.slide-title {
 	font-size: .9em
 }
 
+/*main*/
 
+.main img {
+	margin: 1.5em auto;
+	display: block;
+}
 
+.main h2,
+.main h3 {
+	max-width: 760px;
+}
 
+/*event>date*/
+
+.event-content .date {
+	font-size: 32px;
+  margin-bottom: 1em;
+}
+
+.event-content .location,
+.event-content .host {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+/*includes*/
+
+.inc .btn-primary {
+	margin-top: 1.5em;
+}
+
+/**inc>rel-books**/
+
+.rel-book-inc .row {
+	margin: 1em 0;
+}
+
+/**inc>events**/
+
+.event-inc .date {
+	border-bottom: 1px solid #064083;
+	font-size: 1.75em;
+}
+
+.event-inc .location,
+.event-inc .host {
+	font-size: 1.5em;
+}
+
+.event-inc .location {
+	font-weight: bold;
+}
+
+/**inc>about**/
+
+.about-inc {
+	padding-bottom: 3em;
+}
 
 /*posts*/
 
@@ -392,6 +446,9 @@ footer h3 {
 	font-weight: bold; 
 } 
 
+footer ul {
+	color: #fff;
+}
 
 /******* Content Editor Utilities ******/
 
@@ -580,4 +637,5 @@ footer h3 {
     background-color: #fff;
     width: 300px;
     z-index: 999;
+    display: none;
 }

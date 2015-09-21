@@ -8,8 +8,14 @@ layout: default
     <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <article class="video-series-content">
+  <article class="main video-series-content">
     {{ content }}
   </article>
+
+  {% include clients.html %}
+	{% include services.html %}
+	{% include events.html %}
+	{% include rel-books.html %}
+	{% include about.html %}
 
 </div>
