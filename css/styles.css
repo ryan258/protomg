@@ -7,6 +7,15 @@ body {
 
 }
 
+.navbar-default {
+	background: url(http://www.mikegreg.com/sites/all/themes/mgtwo/images/bg.png) repeat-x;
+}
+
+a.navbar-brand {
+  height: 140px;
+  margin-top: -16px;
+}
+
 h1 {
 	font-size: 86px;
 	line-height: 92px;
